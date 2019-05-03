@@ -1,6 +1,5 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-#require_relative 'command_line_test_helper'
 require_relative '../../etc/methods'
 require 'pp'
 
