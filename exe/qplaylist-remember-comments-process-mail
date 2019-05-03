@@ -1,7 +1,7 @@
 require_relative '../etc/methods'
 
-module ::QplaylistRememberCommentsProcess
-  module CommandLine
+module ::M1
+  module M2
     extend Methods
 #   extend Methods::ModuleMethods
 #   include Methods::ModuleMethods

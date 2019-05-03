@@ -1,19 +1,19 @@
 require_relative 'command_line_test_helper'
 require_relative '../../etc/methods'
 
-module ::QplaylistRememberCommentsProcess
-  module CommandLine
+module ::M1
+  module M2
     class MailTest < QplaylistRememberCommentsProcessCommandLineTest
 
-#     include ::QplaylistRememberCommentsProcess::CommandLine::TestHelperMethods::InstanceMethods
+#     include ::M1::M2::TestHelperMethods::InstanceMethods
 
       def test_kernel_system
-#pp [::QplaylistRememberCommentsProcess::CommandLine::Methods.instance_methods - ::Object.instance_methods].sort
-pp [::QplaylistRememberCommentsProcess::CommandLine::Methods.methods - ::Object.methods].sort
+#pp [::M1::M2::Methods.instance_methods - ::Object.instance_methods].sort
+pp [::M1::M2::Methods.methods - ::Object.methods].sort
 
-#       ::QplaylistRememberCommentsProcess::CommandLine.stub :child_status_integer, child_status_integer do
-#       ::QplaylistRememberCommentsProcess::CommandLine::Methods::ModuleMethods.stub :child_status_integer, child_status_integer do
-        ::QplaylistRememberCommentsProcess::CommandLine::Methods.stub :child_status_integer, child_status_integer_stub do
+#       ::M1::M2.stub :child_status_integer, child_status_integer do
+#       ::M1::M2::Methods::ModuleMethods.stub :child_status_integer, child_status_integer do
+        ::M1::M2::Methods.stub :child_status_integer, child_status_integer_stub do
           ::Kernel.                                              stub :system,               kernel_system_mock   do
             ::Kernel.load filename
           end

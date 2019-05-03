@@ -1,7 +1,7 @@
 require 'English'
 
-module ::QplaylistRememberCommentsProcess
-  module CommandLine
+module ::M1
+  module M2
     module Methods
 
 =begin
