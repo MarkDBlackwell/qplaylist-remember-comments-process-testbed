@@ -4,15 +4,6 @@ module ::M1
   module M2
     module Methods
 
-=begin
-        def child_status_integer
-print "In Method's child_status_integer\n"
-          child_status.exitstatus if child_status
-        end
-=end
-
-#     module ModuleMethods
-
         extend self
 
         def child_status
@@ -159,13 +150,6 @@ print "In moduleMethod's command_ran_best\n"
         def name_package
           'comments_process'
         end
-
-#       extend self
-
-#     end
-
-#     extend ModuleMethods
-#     include ModuleMethods
     end
   end
 end

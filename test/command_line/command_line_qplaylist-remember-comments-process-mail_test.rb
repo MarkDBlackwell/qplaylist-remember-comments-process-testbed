@@ -7,20 +7,14 @@ module ::M1
   module M2
     class MailTest < ::Minitest::Test
 
-#     include ::M1::M2::TestHelperMethods::InstanceMethods
-
       def test_kernel_system
-#pp [::M1::M2::Methods.instance_methods - ::Object.instance_methods].sort
 pp [::M1::M2::Methods.methods - ::Object.methods].sort
 
-#       ::M1::M2.stub :child_status_integer, child_status_integer do
-#       ::M1::M2::Methods::ModuleMethods.stub :child_status_integer, child_status_integer do
         ::M1::M2::Methods.stub :child_status_integer, child_status_integer_stub do
           ::Kernel.                                              stub :system,               kernel_system_mock   do
             ::Kernel.load filename
           end
         end
-#       end
         kernel_system_mock.verify
       end
 
