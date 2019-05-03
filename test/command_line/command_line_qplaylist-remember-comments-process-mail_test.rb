@@ -21,7 +21,7 @@ pp [::M1::M2::Methods.methods - ::Object.methods].sort
       private
 
       def basename
-        'qplaylist-remember-comments-process-mail'
+        'qplaylist-remember-comments-process-mail.rb'
       end
 
       def child_status_integer_stub
