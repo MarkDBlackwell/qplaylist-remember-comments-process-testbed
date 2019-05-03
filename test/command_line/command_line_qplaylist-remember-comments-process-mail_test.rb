@@ -3,7 +3,7 @@ require_relative '../../etc/methods'
 
 module ::M1
   module M2
-    class MailTest < QplaylistRememberCommentsProcessCommandLineTest
+    class MailTest < CommandLineTest
 
 #     include ::M1::M2::TestHelperMethods::InstanceMethods
 

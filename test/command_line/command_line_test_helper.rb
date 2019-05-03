@@ -4,7 +4,7 @@ require 'pp'
 
 module ::M1
   module M2
-    class QplaylistRememberCommentsProcessCommandLineTest < ::Minitest::Test
+    class CommandLineTest < ::Minitest::Test
     end
   end
 end
