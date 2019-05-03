@@ -1,9 +1,12 @@
-require_relative 'command_line_test_helper'
+require 'minitest/autorun'
+require 'minitest/pride'
+#require_relative 'command_line_test_helper'
 require_relative '../../etc/methods'
+require 'pp'
 
 module ::M1
   module M2
-    class MailTest < CommandLineTest
+    class MailTest < ::Minitest::Test
 
 #     include ::M1::M2::TestHelperMethods::InstanceMethods
 
