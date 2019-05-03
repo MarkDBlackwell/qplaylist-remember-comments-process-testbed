@@ -11,7 +11,7 @@ module ::M1
 pp [::M1::M2::Methods.methods - ::Object.methods].sort
 
         ::M1::M2::Methods.stub :child_status_integer, child_status_integer_stub do
-          ::Kernel.                                              stub :system,               kernel_system_mock   do
+          ::Kernel.       stub :system,               kernel_system_mock        do
             ::Kernel.load filename
           end
         end
